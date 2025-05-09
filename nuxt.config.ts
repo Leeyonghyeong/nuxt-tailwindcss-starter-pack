@@ -44,7 +44,5 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'Your Url' },
       ],
     },
-
-    pageTransition: { name: 'page', mode: 'out-in' },
   },
 })
