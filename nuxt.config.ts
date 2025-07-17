@@ -5,14 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@pinia/nuxt',
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/ui', '@pinia/nuxt'],
 
   vite: {
     plugins: [tailwindcss()],
@@ -43,6 +36,7 @@ export default defineNuxtConfig({
         },
         { property: 'og:url', content: 'Your Url' },
       ],
+      link: [{ rel: 'stylesheet', href: '/css/xeicon.min.css' }],
     },
   },
 })

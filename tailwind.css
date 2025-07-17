@@ -1,2 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 @import "tailwindcss";
-@import './css/variables.css';
+@import "~/assets/css/utilities.css";
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeoTTF-aLt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeoTTF-bRg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeoTTF-cBd.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeoTTF-dEb.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeoTTF-eHv.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GmarketSans-bold';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/GmarketSansBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GmarketSans-medium';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/GmarketSansMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GmarketSans-light';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/GmarketSansLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'xeicon';
+  src: url('/fonts/xeicon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  /* Custom 시 primary 색상 변경 */
+  --color-primary: #18A8F1;
+  --font-gmarket-bold: "GmarketSans-bold", sans-serif;
+  --font-gmarket-medium: "GmarketSans-medium", sans-serif;
+  --font-gmarket-light: "GmarketSans-light", sans-serif;
+
+  --shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+html, body {
+  font-family: "NanumSquareNeo", "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  color: #111;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-icon {
+  font-family: 'xeicon', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+}
